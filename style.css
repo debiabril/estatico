@@ -1,0 +1,147 @@
+:root{
+    --red-color: rgba(255, 0, 0, 0.884);
+    --green-color: rgb(4, 194, 4);
+    --violet-color: rgb(119, 0, 255);
+    --orange-color: rgb(255, 136, 0);
+    --lightblue-color: rgb(86, 213, 255);
+    --yellow-color: rgb(255, 230, 0);
+    --black-color: black;
+}
+body{
+    overflow-y: scroll;
+    background-color: rgba(101, 248, 79, 0.205);
+    font-family: 'Life Savers', cursive;
+    font-weight: bold;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+.titulos-h5{
+    font-family: 'Life Savers', cursive;
+    font-weight: bold;
+}
+.btn{
+    font-weight: bold;
+}
+.display-none{
+    display: none;
+}
+
+/*HEADER*/
+.img-banner{
+    background-image: url(/imagenesArgProg/banner.jpeg); 
+    height:250px;
+}
+.div-img-fotoPerfil{
+    width: 200px;
+}
+.img-fotoPerfil{
+    width: 200px; z-index: 1
+}
+.titulo-nombre{
+    font-family: 'Marko One', serif;
+}
+.titulo-profesion{
+    font-family: 'Monofett', cursive;
+}
+
+/*ACERCA DE MI Y DATOS*/
+.lead{
+    font-family: 'Life Savers', cursive;
+    font-weight: bold;
+}
+
+/*SKILLS*/
+
+.progress-title{
+    font-family: 'Life Savers', cursive;
+    font-weight: bold;
+    font-size: small;
+    margin: 0 0 ;
+}
+.progress{
+    height: 25px;
+    background: #fff;
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    border-radius: 0;
+    margin-bottom: 10px;
+    overflow: visible;
+    position: relative;
+}
+.progress:before,
+.progress:after{
+    content: "";
+    width: 5px;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    bottom: 0;
+}
+.progress:after{
+    left: auto;
+    right: -5px;
+}
+.progress .progress-bar{
+    border: none;
+    box-shadow: none;
+    -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+    animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+}
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
+.progress-bar-red{
+    background-color: var(--red-color);
+}
+
+.progress-bar-green{
+    background-color: var(--green-color);
+}
+.progress-bar-violet{
+    background-color: var(--violet-color);
+}
+.progress-bar-orange{
+    background-color: var(--orange-color);
+}
+.progress-bar-lightblue{
+    background-color: var(--lightblue-color);
+}
+.progress-bar-yellow{
+    background-color: var(--yellow-color);
+}
+.progress-bar-black{
+    background-color: var(--black-color);
+}
+
+
+/*PROYECTOS*/
+.col-proyectos-ancho{
+    width: 20rem
+}
+.texto-proyectos{
+    text-align: justify;
+}
+
+/*FOOTER*/
+footer{
+    background-color:black;
+    display: flex; 
+    justify-content: center;
+    
+}
+.footerText{
+    text-align: center;
+    color: white;   
+}
